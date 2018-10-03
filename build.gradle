@@ -1,0 +1,13 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+dependencies {
+    testCompile 'junit:junit:4.12'
+    testCompile "pl.pragmatists:JUnitParams:1.0.4"
+}
+repositories {
+    mavenCentral()
+}
+mainClassName = 'App'
+
