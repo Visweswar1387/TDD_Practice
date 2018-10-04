@@ -1,4 +1,5 @@
-import com.practiceTdd.FibonacciSeries;
+package com.practiceTdd;
+
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
 import org.junit.Assert;

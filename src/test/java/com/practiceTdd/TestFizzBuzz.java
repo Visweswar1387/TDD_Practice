@@ -1,4 +1,4 @@
-import com.practiceTdd.FizzBuzz;
+package com.practiceTdd;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

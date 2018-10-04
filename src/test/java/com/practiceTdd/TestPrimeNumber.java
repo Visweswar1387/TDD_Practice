@@ -1,4 +1,5 @@
-import com.practiceTdd.PrimeNumber;
+package com.practiceTdd;
+
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
 import org.junit.Assert;
