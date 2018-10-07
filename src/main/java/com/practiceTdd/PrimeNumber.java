@@ -5,7 +5,7 @@ public class PrimeNumber {
 
     public String checkPrimeNumber(int input) {
 
-        if(input>2) {
+        if(input>1) {
 
             for (int number = 2; number <= input / 2; number++) {
                 if (input % number == ZERO) {
