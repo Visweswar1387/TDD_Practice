@@ -12,6 +12,14 @@ public class TestPrimeNumber {
     public void initialise() {
         primeNumber = new PrimeNumber();
     }
+
+
+    @Test
+    public void shouldTestInputGreaterThanOne() {
+
+        Assert.assertEquals("Prime Number", primeNumber.checkPrimeNumber(1));
+    }
+
     @Test
     public void shouldTestPrimeNumber() {
 
