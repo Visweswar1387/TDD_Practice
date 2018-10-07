@@ -1,9 +1,12 @@
 package com.practiceTdd;
 
 public class PrimeNumber {
-    public String checkPrimeNUmber(int input) {
-        for(int i=2; i<input/2;i++) {
-            if(input%i == 0) {
+    private static final int ZERO = 0;
+
+    public String checkPrimeNumber(int input) {
+
+        for(int number=2; number<=input/2;number++) {
+            if(input%number == ZERO) {
                 return "Not Prime Number";
             }
         }

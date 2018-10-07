@@ -14,7 +14,7 @@ public class App {
 
         System.out.println("Prime Number Task");
         PrimeNumber primeNumber = new PrimeNumber();
-        System.out.println(primeNumber.checkPrimeNUmber(100));
+        System.out.println(primeNumber.checkPrimeNumber(100));
 
 
         System.out.println("Fibonacci Task");
