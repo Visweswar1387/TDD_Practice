@@ -17,7 +17,7 @@ public class TestPrimeNumber {
     @Test
     public void shouldTestInputGreaterThanOne() {
 
-        Assert.assertEquals("Prime Number", primeNumber.checkPrimeNumber(1));
+        Assert.assertEquals("Prime number should be greater than one", primeNumber.checkPrimeNumber(1));
     }
 
     @Test

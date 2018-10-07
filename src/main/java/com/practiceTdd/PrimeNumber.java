@@ -5,11 +5,16 @@ public class PrimeNumber {
 
     public String checkPrimeNumber(int input) {
 
-        for(int number=2; number<=input/2;number++) {
-            if(input%number == ZERO) {
-                return "Not Prime Number";
+        if(input>2) {
+
+            for (int number = 2; number <= input / 2; number++) {
+                if (input % number == ZERO) {
+                    return "Not Prime Number";
+                }
             }
+            return "Prime Number";
+        } else {
+            return "Prime number should be greater than one";
         }
-        return "Prime Number";
     }
 }
