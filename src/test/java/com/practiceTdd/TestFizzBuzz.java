@@ -2,10 +2,6 @@ package com.practiceTdd;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import junitparams.JUnitParamsRunner;
-import junitparams.Parameters;
-import org.junit.runner.RunWith;
-@RunWith(JUnitParamsRunner.class)
 
 public class TestFizzBuzz {
 
@@ -16,38 +12,21 @@ public class TestFizzBuzz {
         fizzBuzz = new FizzBuzz();
     }
     @Test
-    @Parameters({
-            "3, true",
-            "13, false"
-    })
-    public void shouldTestMultiplesOfThree(int input, boolean result) {
+    public void shouldTestMultiplesOfThree() {
 
-        Assert.assertEquals(result, fizzBuzz.checkMultipleOfThree(input));
+        Assert.assertEquals(true, fizzBuzz.checkMultipleOfThree(3));
     }
 
     @Test
-    @Parameters({
-            "50, true",
-            "13, false",
-            "15, true"
-    })
-    public void shouldTestMultiplesOfFive(int input, boolean result) {
+    public void shouldTestMultiplesOfFive() {
 
-        Assert.assertEquals(result, fizzBuzz.checkMultipleOfFive(input));
+        Assert.assertEquals(true, fizzBuzz.checkMultipleOfFive(5));
     }
 
     @Test
-    @Parameters({
-            "15, true",
-            "30, true",
-            "45, true",
-            "60, true",
-            "75, true",
-            "90, true"
-    })
-    public void shouldTestMultipleOfThreeAndFive(int input, boolean result) {
+    public void shouldTestMultipleOfThreeAndFive() {
 
-        Assert.assertEquals(result, fizzBuzz.checkMultipleThreeAndFive(input));
+        Assert.assertEquals(true, fizzBuzz.checkMultipleThreeAndFive(15));
     }
 
 }
