@@ -2,6 +2,9 @@ package com.practiceTdd;
 
 public class FizzBuzz {
 
+    private static final int THREE = 3;
+    private static final int FIVE = 5;
+    private static final int RESULT = 0;
 
     public void print(int startNumber, int endNumber) {
 
@@ -21,25 +24,16 @@ public class FizzBuzz {
         }
     }
 
-    public boolean checkMultipleThreeAndFive(int printNumber) {
-        if (printNumber%3==0 && printNumber%5==0) {
-            return true;
-        }
-        return false;
+    public boolean checkMultipleThreeAndFive(int number) {
+        return number%THREE==RESULT && number%FIVE==RESULT;
     }
 
-    public boolean checkMultipleOfFive(int printNumber) {
-        if (printNumber%5==0) {
-            return true;
-        }
-        return false;
+    public boolean checkMultipleOfFive(int number) {
+        return number%FIVE==RESULT;
     }
 
-    public boolean checkMultipleOfThree(int printNumber) {
-        if (printNumber%3==0) {
-            return true;
-        }
-        return false;
+    public boolean checkMultipleOfThree(int number) {
+        return number%THREE==RESULT;
     }
 
 }
